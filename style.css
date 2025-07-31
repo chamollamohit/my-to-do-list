@@ -1,0 +1,109 @@
+/* Basic Setup */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    display: block;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styling */
+#task-form {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+#add-task-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background-color: #5c67f2;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-task-btn:hover {
+    background-color: #4a54c2;
+}
+
+/* Container for the side-by-side lists */
+.task-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* The space between the two columns */
+    margin-top: 2rem;
+}
+
+
+/* Styling for the "Pending" and "Completed" headings */
+.task-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0rem;
+    border-bottom: 2px solid var(--border-color);
+    color: black;
+}
+
+/* Style for the "Clear All" button */
+.clear-btn {
+    display: block; /* Make it take the full width of its column */
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: #e74c3c; /* A distinct red color */
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Base style for all list items */
+#pending-task-list , #completed-task-list {
+    overflow-wrap: break-word;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem;
+    background-color: var(--card-color);
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0.5rem;
+}
+
+
+/* Style specifically for COMPLETED tasks */
+#completed-task-list  {
+    text-decoration: line-through;
+    color: #aaa}
