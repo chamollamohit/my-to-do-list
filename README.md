@@ -1,6 +1,9 @@
 # ToDoList Pro 📝
 A responsive and feature-rich to-do list web application built with modern HTML, CSS, and vanilla JavaScript. This project helps you organize your daily tasks efficiently with a clean, dual-theme interface.
 
+# Demo
+➡️ [Live Demo](https://mohit-to-do-list.netlify.app/)
+
 # ✨ Features
 ✅ Task Management: Add, complete, and clear tasks with intuitive controls.
 
